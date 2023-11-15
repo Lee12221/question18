@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>역사박물관</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <!-- #wrap>#left+#contents+#slide^#footer -->
+    <div id="wrap">
+        <div id="left">
+            <!-- .logo+nav -->
+            <div class="logo">
+                <!-- a>img -->
+                <a href="#"><img src="img/logo.png" alt="로고"></a>
+            </div>
+            <nav>
+                <!-- ul.gnb>li*4>a[href="#"]+ul.sub>li*4>a[href="#"] -->
+                <ul class="gnb">
+                    <li>
+                        <a href="#">박물관 소개</a>
+                        <ul class="sub">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">박물관연혁</a></li>
+                            <li><a href="#">유물현황</a></li>
+                            <li><a href="#">관람안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">전시</a>
+                        <ul class="sub">
+                            <li><a href="#">선사시대</a></li>
+                            <li><a href="#">삼국시대</a></li>
+                            <li><a href="#">조선시대</a></li>
+                            <li><a href="#">근대시대</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">연구</a>
+                        <ul class="sub">
+                            <li><a href="#">생활유적</a></li>
+                            <li><a href="#">분묘유적</a></li>
+                            <li><a href="#">생산유적</a></li>
+                            <li><a href="#">통신유적</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">교육</a>
+                        <ul class="sub">
+                            <li><a href="#">문화행사</a></li>
+                            <li><a href="#">진로체험</a></li>
+                            <li><a href="#">외부교육</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="contents">
+            <div id="notice">
+                <div class="title">공지사항</div>
+                <!-- ul.notice>li*4>a[href="#"]>div.subject+div.date -->
+                <ul class="notice">
+                    <li>
+                        <a href="#" class="on">
+                            <div class="subject">여름방학 유아 교육 프로그램 신청 안내	</div>
+                            <div class="date">2023-07-11</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="subject">여름방학 교원연수 신청 안내	</div>
+                            <div class="date">2023-07-11</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="subject">청년 큐레이터 아카데미 대상자 안내	</div>
+                            <div class="date">2023-07-10</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="subject">역사박물관 자료 공개구입 공고	</div>
+                            <div class="date">2023-07-06</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div id="gallery">
+                <div class="title">갤러리</div>
+                <!-- ul.gallery>li*2>a[href="#"]>img[src="img/gallery$$.jpg" alt="갤러리"] -->
+                <ul class="gallery">
+                    <li><a href="#"><img src="img/gallery01.jpg" alt="갤러리">청년문화공연</a></li>
+                    <li><a href="#"><img src="img/gallery02.jpg" alt="갤러리">어린이날 기념공연</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div id="link">
+                <!-- ul.link>li*4>a[href="#"]>img[src="img/link$.png" alt="바로가기"] -->
+                <ul class="link">
+                    <li><a href="#"><img src="img/link1.png" alt="바로가기">협력망</a></li>
+                    <li><a href="#"><img src="img/link2.png" alt="바로가기">아카이브</a></li>
+                    <li><a href="#"><img src="img/link3.png" alt="바로가기">상설전시</a></li>
+                    <li><a href="#"><img src="img/link4.png" alt="바로가기">체험관</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="slide">
+            <!-- ul>li*4>a[href="#"]>div.text -->
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="text">
+                            2023 <br>
+                            현대사 시민강좌
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">
+                            1026 <br>  
+                            안중근 의사 의거기념 강좌
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">
+                            격동의 한반도 <br>
+                            대한제국사 특별 전시회
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text">
+                            2023 <br>
+                            현대사 시민강좌
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <!-- .f_logo+.copy+.family -->
+        <div class="f_logo">
+            <a href="#"><img src="img/logo.png" alt="풋터로고"></a>
+        </div>
+        <div class="copy">
+            03141 서울특별시 종로구 세종대로 198 | 대표전화 02-3703-9200 | 팩스 02-3703-9216 <br>
+            Copyright ⓒ Museum of Korean Contemporary History.All Right reserved
+        </div>
+        <div class="family">
+            <select name="family" id="family">
+                <option value="">패밀리사이트</option>
+                <option value="">문화체육관광부</option>
+                <option value="">국사편찬위원회</option>
+                <option value="">국가기록원</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- #popup>.popup_body>h3+p+button.close -->
+    <div id="popup">
+        <div class="popup_body">
+            <h3>제목 : 여름방학 유아 교육 프로그램 신청 안내</h3>
+            <p>
+                공고번호:2023-84호 <br>
+                
+                - 교육방식 : 1회대면교육  
+                - 교육대상 : 6~7세 유아 1명과 보호자 1명 2017~2018년생유아  
+                - 교육장소 : 역사박물관 1층 체험교실
+                - 참가비 : 무료
+                <br>
+                자세한 사항은 첨부파일 참조
+                <br>
+                첨부 : 여름방학 유아교육 프로그램.pdf</p>
+            <button class="close"></button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
